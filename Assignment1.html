@@ -1,0 +1,56 @@
+
+<!-- Write JavaScript code to display current date and Time -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment1</title>
+</head>
+<body>
+    
+</body>
+<script>
+var date=new Date();
+let today=date.getDay();
+let numToWeek=(today)=>{
+    switch(today)
+    {
+        case 0:
+            return "Sunday";
+            break;
+        case 1:
+            return "Monday";
+            break;
+        case 2:
+            return "Tuesday";
+            break;
+        case 3:
+            return "Wednesday";
+            break;
+        case 4:
+            return "Thursday";
+            break;
+        case 5:
+            return "Friday";
+            break;
+        case 6:
+            return "Saturday";
+            break;
+    }
+}
+
+let to12HourFormat=(hrs)=>{
+if(hrs>12)
+{
+    return (hrs-12)+" PM"
+}
+else
+return hrs+"AM"
+}
+
+document.write("Today is : ",numToWeek(today),"<br>");
+document.write("The current Time is : ",to12HourFormat(date.getHours())+":"+date.getMinutes()+":"+date.getSeconds())
+</script>
+</html>
