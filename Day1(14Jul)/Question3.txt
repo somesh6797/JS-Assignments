@@ -1,0 +1,54 @@
+Datatypes
+in JS we primitive and Non-primititve Datatype
+
+primititve Datatype::
+..Primitive types also have their wrapper objects.
+..we can see the type of any variable using typeof(variable_name);
+
+1)Number
+2)Strings
+3)Boolean
+4)Undefined
+5)NUll
+6)Symbols (ES6)
+
+Number::
+    ..JavaScript numbers are always stored as double precision floating point numbers in 64 bit.
+    ..the number (mantissa/fractional part) is stored in bit 0 to 51, the exponent in bit 52 to 62, and the sign in bit 63
+    ..if we try operation of number with a anything that is no a number we get the NaN value wiz reserved word.
+
+String::
+    ..strings are group of character
+    .. we can have string using single quote string double quote string backtick quote string i.e. template string for 
+        multiline statement and displaying of values (ES6 feature)
+    ..we can also cereate string using new operator 
+
+Boolean::
+    ..Boolean Datatype have only two literls i.e. true and false
+    ..these two literals are like true--1 and false--0 in numbers
+    ..these can be used for flags mostly.
+
+Undefined::
+    ..Undefined is the Datatype for the variable that is exist but doesnt hava a value.
+    ..in the dom if an element is not exist then it is considered to be an undefined
+    ..we cannot read property of Undefined but we can compare it with undefined.
+
+NUll::
+    ..typeof undefined--> "undefined"
+    .. typeof null--> "object" 
+    ..undefined==null --> true
+    ..undefined===null--> false
+
+Symbols::
+    ..symbols are used for private and unique properties.
+    ..symbolscan be created with the Symbol constructor like
+    ..let sym1=new Symbol("NewSymbol")
+    ..text in "" is description for the symbol
+    ..we must use symbol with [ ] like
+    ..let sym1=new Symbol("NewSymbol")
+    ..AnyObject[sym]="This is value"
+
+
+Non-Primitive:: 
+    non primititve datatype in the JS are objects 
+..objects can be created with the Object constructor but there are also vsrious ways to create the objects

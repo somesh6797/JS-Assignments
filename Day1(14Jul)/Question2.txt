@@ -1,0 +1,23 @@
+var: 
+    1)it is NOT a ES6 feature
+    2)var is scope based or global based (if declared globally) i.e. var can be accesed inside the scope.
+    3) variable can be redeclared with var
+    4)global variablecan be accessed using window.variable.
+
+
+let:
+    1)it is ES6 feature
+    2)let is block based i.e. let can only be accessd inside the block it cannot 
+      be accessed outside the block;
+    3)gives error if redeclared with let 
+    4) cannot accese by using window object
+     
+
+const:
+    1)it is ES6 feature
+    2)it is used to declare blockbased constants.
+    3) cannot redeclare or re-assign a value
+    4) cannot access with window object
+
+
+for examples i have submitted Assignment2.js file it has the code and some explanation

@@ -1,0 +1,2 @@
+Explore and explain the various methods in console function.
+-->Assignment1.js 
